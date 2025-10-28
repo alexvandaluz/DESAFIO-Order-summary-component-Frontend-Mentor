@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+--Blue50: hsl(225, 100%, 98%);
+--Gray600: hsl(224, 23%, 55%);
+--Blue950: hsl(223, 47%, 23%);
+--Blue100: hsl(225, 100%, 94%);
+--Blue700: hsl(245, 75%, 52%);
+}
+
+body{
+    font-family: "Red Hat Display",sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--Blue100);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 450px;
+    height: 700px;
+    border-radius: 15px;
+    
+}
+
+.illustration{
+    width: 450px;
+    border-radius: 15px 15px 0 0;
+}
+
+h1{
+    color:var(--Blue950);
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p{
+    color: var(--Gray600);
+    font-size: 20px;
+    width: 360px;
+    margin-top:30px;
+    text-align: center;
+}
+
+.price{
+    background-color: var(--Blue50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.pricePlan{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pricePlan p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 !important;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.pricePlan p span{
+    color:var(--Blue950);
+    font-weight: bold;
+}
+
+.price a{
+    color: var(--Blue700);
+    font-weight: bold;
+}
+
+button{
+    background-color: var(--Blue700);
+    padding:15px 100px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border:none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.cancel{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.attribution{
+    margin-top: 10px;
+}
